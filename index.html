@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css_reset.css" />
+    <script
+      src="https://kit.fontawesome.com/86af498a57.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      .vl {
+        border-left: 6px solid rgb(150, 150, 150);
+        height: 2px;
+        margin-top: 8px;
+      }
+      .negi{
+        text-align: center;
+        margin-top: 20px; padding: 15px;
+      }
+      .menu {
+        height: 55px;
+        width: 100%;
+        background-color: #d9d9d9;
+      }
+      .logo {
+        height: 55px;
+        width: 10%; float : left;
+        background-color: rgb(235, 190, 253);
+      }
+  
+      .option{
+        height: 55px;
+        width: 75%; float: left;
+        background-color: lavender;
+      }
+      .menu li {
+        /* list-style-type: none; */
+        float: left;
+        padding: 18px;
+        list-style: none;
+      }
+      .menu li a {
+        text-decoration: none;
+        color: black;
+      }
+      .menu li:hover {
+        background-color: white;
+        border-radius: 30px;
+      }
+      .right_menu{
+        height: 55px; 
+        width: 15%; float : right;
+        background-color: rgb(184, 178, 246);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <div class="logo">
+          <i class="fa-solid fa-fire-extinguisher fa-2xl negi"></i>
+        </div>
+        <!-- <li><i class="fa-solid fa-fire-extinguisher"></i></li> -->
+        <!-- <li class="vl"></li> -->
+        <div class="option">
+          <li><a href="#home">home</a></li>
+          <li><a href="#Product">Product</a></li>
+          <li><a href="#select">Select</a></li>
+          <li><a href="#Product">Product</a></li>
+          <li><a href="#Home">Home</a></li>
+        </div>
+        <div class="right_menu">
+            <i class="fa-solid fa-bell fa-xl negi" ></i>
+            <i class="fa-solid fa-fire-extinguisher fa-xl negi" ></i>
+            <i class="fa-solid fa-fire-extinguisher fa-xl negi"></i>
+        </div>
+      </ul>
+    </div>
+  </body>
 </html>
