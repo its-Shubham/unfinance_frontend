@@ -32,22 +32,33 @@
             height: 55px;
             width: 100%;
             background-color: #d9d9d9;
+            /* background-color: aquamarine; */
         }
 
         .logo {
             height: 55px;
             width: 10%;
             float: left;
-            /* background-color: #D9D9D9; */
+            /* margin-top: 12px; */
+            /* margin-left: 12px; */
+            padding: -200px;
+            /* background-color: purple; */
+        }
+
+        .letters {
+            height: 30px;
+            width: 100px;
+            /* background-color: antiquewhite; */
+            overflow: none;
             margin-top: 12px;
             margin-left: 12px;
         }
 
         .option {
             height: 55px;
-            width: 75%;
+            width: 70%;
             float: left;
-            /* background-color: #D9D9D9; */
+            /* background-color: blueviolet; */
         }
 
         .menu li {
@@ -69,9 +80,10 @@
 
         .right_menu {
             height: 55px;
-            width: 15%;
+            width: 20%;
             float: right;
-            /* background-color: #D9D9D9; */
+            margin-top: -5px;
+            /* background-color: #cb1d1d; */
         }
 
         .main-body {
@@ -85,14 +97,24 @@
         .top {
             /* background-color: greenyellow; */
             width: 900px;
-            height: 25%;
 
+        }
+
+        .heading {
+            width: 100%;
+            height: 80%;
         }
 
         .top-left {
             width: 60%;
             height: 80%;
-            /* background-color: aqua; */
+            float: left;
+        }
+
+        .button_new_temp {
+            width: 40%;
+            height: 80%;
+            float: right;
         }
 
         .option-name {
@@ -128,14 +150,15 @@
         .top-right button {
             width: 215px;
             height: 41px;
-
             font-family: 'Inter';
             font-style: normal;
             border-style: none;
             border-radius: 30px;
             color: white;
             background-color: #969696;
-
+            /* margin-left:50%; */
+            margin: 35px;
+            margin-left: 67%;
         }
 
         .bottom {
@@ -170,40 +193,163 @@
         }
 
         .tabcontent {
-            background-color: green;
+            /* background-color: green; */
             margin-top: 40px;
 
         }
 
+        .search-bar {
+            height: 40px;
+            width: 585px;
+            background-color: #b6b6b6;
+            border-radius: 22px;
+            display: flex;
+        }
 
+        .search-bar>i {
+            color: white;
+            padding: 15px;
+        }
+
+        .search-bar>input {
+            background-color: #b6b6b6;
+            flex: 1;
+            border-radius: 22px;
+            border: none;
+            outline: none;
+        }
 
         /* search bar */
-        .box {
-            width: 500px;
-            height: 50px;
-            background-color:#969696;
-            border-radius: 30px;
+        /* #form {
+            background-color: #ffffff;
+            width: 300px;
+            height: 44px;
+            border-radius: 5px;
             display: flex;
+            flex-direction: row;
             align-items: center;
-            padding: 20px;
-
         }
-        .box > i {
-            font-size: 20px;
-            color: #777;
 
+        #query {
+            all: unset;
+            font: 16px system-ui;
+            height: 100%;
+            width: 100%;
+            padding: 6px 10px;
         }
-        .box > input {
-            flex:1;
-            height:40px;
-            border: none;
-            outline:none;
-            font-size: 18px;
-            padding-left:10px ;
-            background-color: #969696;
 
+        ::placeholder {
+            color: rgb(0, 0, 0);
+            opacity: 0.7;
         }
-        
+
+        .searchsvg {
+            color: rgb(0, 0, 0);
+            fill: currentColor;
+            width: 24px;
+            height: 24px;
+            padding: 10px;
+        }
+
+        .search button {
+            all: unset;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+        } */
+
+        /* table */
+        body {
+            font-family: 'lato', sans-serif;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        h2>small {
+            font-size: 0.5em;
+        }
+
+        .responsive-table>li {
+            border-radius: 3px;
+            padding: 25px 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+        }
+
+        .responsive-table>.table-header {
+            background-color: #95A5A6;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .responsive-table>.table-row {
+            background-color: #ffffff;
+            box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .responsive-table>.col-1 {
+            flex-basis: 10%;
+        }
+
+        .responsive-table>.col-2 {
+            flex-basis: 40%;
+        }
+
+        .responsive-table>.col-3 {
+            flex-basis: 25%;
+        }
+
+        .responsive-table>.col-4 {
+            flex-basis: 25%;
+        }
+
+        .responsive-table {
+
+            @media all and (max-width: 767px) {
+                .table-header {
+                    display: none;
+                }
+
+                .table-row {}
+
+                li {
+                    display: block;
+                }
+
+                .col {
+
+                    flex-basis: 100%;
+
+                }
+
+                .col {
+                    display: flex;
+                    padding: 10px 0;
+
+                    &:before {
+                        color: #6C7A89;
+                        padding-right: 10px;
+                        content: attr(data-label);
+                        flex-basis: 50%;
+                        text-align: right;
+                    }
+                }
+            }
+        }
     </style>
 </head>
 
@@ -211,25 +357,27 @@
     <div class="menu">
         <ul>
             <div class="logo">
-                <!-- <i class="fa-solid fa-fire-extinguisher fa-2xl negi"></i> -->
-                <!-- B -->
-                <svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M19.0672 17.3781C19.0672 21.1914 16.7806 24.18 10.7898 24.18H1.45741C1.07088 24.18 0.700181 24.0163 0.426864 23.7248C0.153547 23.4332 0 23.0379 0 22.6256V2.37452C0 1.96225 0.153547 1.56687 0.426864 1.27536C0.700181 0.983841 1.07088 0.820068 1.45741 0.820068H9.50132C15.8465 0.820068 17.8433 3.49955 17.8433 7.24389C17.8433 9.64862 16.2651 11.3321 15.782 11.71C17.9079 12.8434 19.0672 14.8703 19.0672 17.3781ZM12.8189 7.96536C12.8189 6.38517 11.8526 5.62953 9.82352 5.62953H5.28227V10.5076H9.82352C12.1104 10.5076 12.8189 9.78613 12.8189 7.96536ZM10.1778 14.8017H5.28227V19.3362H10.1778C12.3037 19.3362 13.3666 18.5804 13.3664 17.0689C13.3664 15.3512 12.2714 14.8017 10.1778 14.8017Z"
-                        fill="#27272F" />
-                </svg>
-                <!-- O -->
-                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M11.8303 0.504211C9.60585 0.504213 7.43138 1.20776 5.58183 2.52587C3.73229 3.84399 2.29075 5.71748 1.4395 7.90942C0.588245 10.1014 0.365521 12.5133 0.799487 14.8403C1.23345 17.1672 2.30462 19.3047 3.87753 20.9823C5.45044 22.66 7.45444 23.8025 9.63613 24.2653C11.8178 24.7282 14.0792 24.4906 16.1343 23.5827C18.1894 22.6747 19.9459 21.1372 21.1817 19.1645C22.4176 17.1918 23.0772 14.8725 23.0772 12.5C23.0772 10.9247 22.7863 9.36481 22.2211 7.90941C21.6559 6.45401 20.8274 5.1316 19.783 4.01769C18.7387 2.90378 17.4988 2.02017 16.1343 1.41733C14.7697 0.814488 13.3072 0.504209 11.8303 0.504211ZM11.9089 19.1656C10.8619 19.1672 9.83108 18.8903 8.90963 18.3601C7.74798 18.6972 6.58635 19.0344 5.42473 19.3715C5.74751 18.155 6.0703 16.9385 6.39311 15.722C5.7127 14.4299 5.45006 12.9347 5.64574 11.4675C5.84142 10.0002 6.48454 8.6425 7.47579 7.60395C8.46704 6.5654 9.75127 5.90379 11.1302 5.7213C12.5091 5.5388 13.906 5.84556 15.1052 6.59421C16.3043 7.34286 17.2391 8.49176 17.765 9.86349C18.291 11.2352 18.379 12.7535 18.0153 14.1838C17.6516 15.6142 16.8566 16.8771 15.7529 17.7775C14.6493 18.6779 13.2984 19.1657 11.9089 19.1656Z"
-                        fill="#27272F" />
-                </svg>
-                <!-- W -->
-                <svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M35.6924 1.7925L28.0579 23.5069C27.9884 23.7046 27.8639 23.875 27.7012 23.9953C27.5385 24.1156 27.3452 24.18 27.1472 24.18H23.1183C22.9126 24.18 22.7122 24.1105 22.5459 23.9813C22.3796 23.8522 22.2559 23.6702 22.1927 23.4613L17.8044 8.96159L12.883 23.4951C12.8151 23.6957 12.6908 23.8691 12.5271 23.9917C12.3634 24.1143 12.1683 24.18 11.9683 24.18H7.87723C7.67295 24.18 7.47385 24.1114 7.30819 23.984C7.14252 23.8565 7.01869 23.6766 6.95426 23.4699L0.191547 1.76679C0.157841 1.65862 0.148702 1.54345 0.164889 1.43078C0.181076 1.31811 0.222122 1.21115 0.284649 1.11871C0.347177 1.02626 0.429395 0.950981 0.524537 0.899061C0.619679 0.847142 0.725026 0.820068 0.831897 0.820068H5.04036C5.1834 0.820069 5.32274 0.868555 5.43827 0.958523C5.5538 1.04849 5.63953 1.17529 5.68309 1.32061L10.0743 15.9696L14.9081 1.30114C14.9545 1.16051 15.0406 1.0387 15.1546 0.952523C15.2687 0.86635 15.405 0.820069 15.5447 0.820068H20.3369C20.4805 0.820068 20.6203 0.868937 20.7361 0.959562C20.8519 1.05019 20.9375 1.17784 20.9806 1.32397L25.2767 15.901L30.2051 1.29606C30.2521 1.15667 30.3383 1.03616 30.452 0.95097C30.5656 0.865782 30.7011 0.820068 30.84 0.820068H35.0605C35.1696 0.820068 35.277 0.848249 35.3736 0.902197C35.4702 0.956146 35.5531 1.03426 35.6152 1.12984C35.6773 1.22542 35.7167 1.33564 35.7302 1.45104C35.7436 1.56645 35.7306 1.68362 35.6924 1.7925Z"
-                        fill="#27272F" />
-                </svg>
+                <div class="letters">
+                    <!-- <i class="fa-solid fa-fire-extinguisher fa-2xl negi"></i> -->
+                    <!-- B -->
+                    <svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.0672 17.3781C19.0672 21.1914 16.7806 24.18 10.7898 24.18H1.45741C1.07088 24.18 0.700181 24.0163 0.426864 23.7248C0.153547 23.4332 0 23.0379 0 22.6256V2.37452C0 1.96225 0.153547 1.56687 0.426864 1.27536C0.700181 0.983841 1.07088 0.820068 1.45741 0.820068H9.50132C15.8465 0.820068 17.8433 3.49955 17.8433 7.24389C17.8433 9.64862 16.2651 11.3321 15.782 11.71C17.9079 12.8434 19.0672 14.8703 19.0672 17.3781ZM12.8189 7.96536C12.8189 6.38517 11.8526 5.62953 9.82352 5.62953H5.28227V10.5076H9.82352C12.1104 10.5076 12.8189 9.78613 12.8189 7.96536ZM10.1778 14.8017H5.28227V19.3362H10.1778C12.3037 19.3362 13.3666 18.5804 13.3664 17.0689C13.3664 15.3512 12.2714 14.8017 10.1778 14.8017Z"
+                            fill="#27272F" />
+                    </svg>
+                    <!-- O -->
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.8303 0.504211C9.60585 0.504213 7.43138 1.20776 5.58183 2.52587C3.73229 3.84399 2.29075 5.71748 1.4395 7.90942C0.588245 10.1014 0.365521 12.5133 0.799487 14.8403C1.23345 17.1672 2.30462 19.3047 3.87753 20.9823C5.45044 22.66 7.45444 23.8025 9.63613 24.2653C11.8178 24.7282 14.0792 24.4906 16.1343 23.5827C18.1894 22.6747 19.9459 21.1372 21.1817 19.1645C22.4176 17.1918 23.0772 14.8725 23.0772 12.5C23.0772 10.9247 22.7863 9.36481 22.2211 7.90941C21.6559 6.45401 20.8274 5.1316 19.783 4.01769C18.7387 2.90378 17.4988 2.02017 16.1343 1.41733C14.7697 0.814488 13.3072 0.504209 11.8303 0.504211ZM11.9089 19.1656C10.8619 19.1672 9.83108 18.8903 8.90963 18.3601C7.74798 18.6972 6.58635 19.0344 5.42473 19.3715C5.74751 18.155 6.0703 16.9385 6.39311 15.722C5.7127 14.4299 5.45006 12.9347 5.64574 11.4675C5.84142 10.0002 6.48454 8.6425 7.47579 7.60395C8.46704 6.5654 9.75127 5.90379 11.1302 5.7213C12.5091 5.5388 13.906 5.84556 15.1052 6.59421C16.3043 7.34286 17.2391 8.49176 17.765 9.86349C18.291 11.2352 18.379 12.7535 18.0153 14.1838C17.6516 15.6142 16.8566 16.8771 15.7529 17.7775C14.6493 18.6779 13.2984 19.1657 11.9089 19.1656Z"
+                            fill="#27272F" />
+                    </svg>
+                    <!-- W -->
+                    <svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M35.6924 1.7925L28.0579 23.5069C27.9884 23.7046 27.8639 23.875 27.7012 23.9953C27.5385 24.1156 27.3452 24.18 27.1472 24.18H23.1183C22.9126 24.18 22.7122 24.1105 22.5459 23.9813C22.3796 23.8522 22.2559 23.6702 22.1927 23.4613L17.8044 8.96159L12.883 23.4951C12.8151 23.6957 12.6908 23.8691 12.5271 23.9917C12.3634 24.1143 12.1683 24.18 11.9683 24.18H7.87723C7.67295 24.18 7.47385 24.1114 7.30819 23.984C7.14252 23.8565 7.01869 23.6766 6.95426 23.4699L0.191547 1.76679C0.157841 1.65862 0.148702 1.54345 0.164889 1.43078C0.181076 1.31811 0.222122 1.21115 0.284649 1.11871C0.347177 1.02626 0.429395 0.950981 0.524537 0.899061C0.619679 0.847142 0.725026 0.820068 0.831897 0.820068H5.04036C5.1834 0.820069 5.32274 0.868555 5.43827 0.958523C5.5538 1.04849 5.63953 1.17529 5.68309 1.32061L10.0743 15.9696L14.9081 1.30114C14.9545 1.16051 15.0406 1.0387 15.1546 0.952523C15.2687 0.86635 15.405 0.820069 15.5447 0.820068H20.3369C20.4805 0.820068 20.6203 0.868937 20.7361 0.959562C20.8519 1.05019 20.9375 1.17784 20.9806 1.32397L25.2767 15.901L30.2051 1.29606C30.2521 1.15667 30.3383 1.03616 30.452 0.95097C30.5656 0.865782 30.7011 0.820068 30.84 0.820068H35.0605C35.1696 0.820068 35.277 0.848249 35.3736 0.902197C35.4702 0.956146 35.5531 1.03426 35.6152 1.12984C35.6773 1.22542 35.7167 1.33564 35.7302 1.45104C35.7436 1.56645 35.7306 1.68362 35.6924 1.7925Z"
+                            fill="#27272F" />
+                    </svg>
+                </div>
 
             </div>
             <!-- <li><i class="fa-solid fa-fire-extinguisher"></i></li> -->
@@ -251,15 +399,20 @@
     </div>
     <div class="main-body">
         <div class="top">
-            <div class="top-left">
-                <div class="option-name">Templates</div><br>
-                <div class="option-desc">WhatsApp has a mandatory requirement to get template approval before you can
-                    send notification messages to your users. You can manage your WhatsApp templates here</div>
+            <div class="heading">
+                <div class="top-left">
+                    <div class="option-name">Templates</div><br>
+                    <div class="option-desc">WhatsApp has a mandatory requirement to get template approval before you
+                        can
+                        send notification messages to your users. You can manage your WhatsApp templates here</div>
+                </div>
+                <div class="button_new_temp">
+                    <div class="top-right">
+                        <button type="button">Create new Template</button>
+                    </div>
+                </div>
+                <hr>
             </div>
-            <div class="top-right">
-                <button type="button">Create new Template</button>
-            </div>
-            <hr>
         </div>
         <div class="bottom">
             <div class="bottom-column">
@@ -273,40 +426,8 @@
                 <div id="Approved" class="tabcontent">
                     <!-- search bar -->
                     <div class="search-bar">
-                        <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
-                        <!-- <input type="text" placeholder="Search approved templates here"> -->
-
-
-
-
-                        <!-- <form role="search" id="form">
-                            <input type="search" id="query" name="q" placeholder="Search approved templates here"
-                                aria-label="Search through site content">
-                            <button class="searchbutton">
-                                <svg class="searchsvg" viewBox="0 0 1024 1024">
-                                    <path class="path1"
-                                        d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
-                                    </path>
-                                </svg>
-                            </button>
-                        </form> -->
-
-                        <div class="search-box">
-                            <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
-                            <form action="" class="search-form">
-                                <input type="text" placeholder="Search approved templates here" id="search" autocomplete="off">
-                            </form>
-                            <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px"
-                                viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;" xml:space="preserve">
-                                <path class="border"
-                                    d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280" />
-                                <path class="border"
-                                    d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280" />
-                            </svg>
-                            <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
-                        </div>
+                        <i class="fa fa-search fa-l"></i>
+                        <input type="text" placeholder="Search approved templates here">
                     </div>
                     <!-- filter dropdown -> it needs to be changed into popup -->
                     <div class="filter">
@@ -318,12 +439,14 @@
                             <a href="#Oldest">Oldest</a>
                         </div>
                     </div>
+                    
                 </div>
 
                 <div id="In Review" class="tabcontent">
                     <!-- search bar -->
                     <div class="search-bar">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+                        <i class="fa fa-search"></i>
                         <input type="text" placeholder="Search approved templates here">
                     </div>
                     <!-- filter dropdown -> it needs to be changed into popup -->
@@ -376,8 +499,8 @@
 
                 <div id="Deleted" class="tabcontent">
                     <!-- search bar -->
-                    <div class="box">
-                        <i class="fal fa-search"></i>
+                    <div class="search-bar">
+                        <button type="submit"><i class="fa fa-search"></i></button>
                         <input type="text" placeholder="Search approved templates here">
                     </div>
                     <!-- filter dropdown -> it needs to be changed into popup -->
@@ -391,7 +514,6 @@
                         </div>
                     </div>
                 </div>
-                <div></div>
             </div>
             <hr>
         </div>
