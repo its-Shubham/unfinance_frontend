@@ -170,7 +170,7 @@
         }
 
         .tabcontent {
-            /* background-color: green; */
+            background-color: green;
             margin-top: 40px;
 
         }
@@ -178,43 +178,31 @@
 
 
         /* search bar */
-        /* #form {
-            background-color: #ffffff;
-            width: 300px;
-            height: 44px;
-            border-radius: 5px;
+        .box {
+            width: 500px;
+            height: 50px;
+            background-color:#969696;
+            border-radius: 30px;
             display: flex;
-            flex-direction: row;
             align-items: center;
-        }
+            padding: 20px;
 
-        #query {
-            all: unset;
-            font: 16px system-ui;
-            height: 100%;
-            width: 100%;
-            padding: 6px 10px;
         }
+        .box > i {
+            font-size: 20px;
+            color: #777;
 
-        ::placeholder {
-            color: rgb(0, 0, 0);
-            opacity: 0.7;
         }
+        .box > input {
+            flex:1;
+            height:40px;
+            border: none;
+            outline:none;
+            font-size: 18px;
+            padding-left:10px ;
+            background-color: #969696;
 
-        .searchsvg {
-            color: rgb(0, 0, 0);
-            fill: currentColor;
-            width: 24px;
-            height: 24px;
-            padding: 10px;
         }
-
-        .search button {
-            all: unset;
-            cursor: pointer;
-            width: 44px;
-            height: 44px;
-        } */
         
     </style>
 </head>
@@ -285,8 +273,40 @@
                 <div id="Approved" class="tabcontent">
                     <!-- search bar -->
                     <div class="search-bar">
-                        
-                        
+                        <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+                        <!-- <input type="text" placeholder="Search approved templates here"> -->
+
+
+
+
+                        <!-- <form role="search" id="form">
+                            <input type="search" id="query" name="q" placeholder="Search approved templates here"
+                                aria-label="Search through site content">
+                            <button class="searchbutton">
+                                <svg class="searchsvg" viewBox="0 0 1024 1024">
+                                    <path class="path1"
+                                        d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </form> -->
+
+                        <div class="search-box">
+                            <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
+                            <form action="" class="search-form">
+                                <input type="text" placeholder="Search approved templates here" id="search" autocomplete="off">
+                            </form>
+                            <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px"
+                                viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;" xml:space="preserve">
+                                <path class="border"
+                                    d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280" />
+                                <path class="border"
+                                    d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280" />
+                            </svg>
+                            <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
+                        </div>
                     </div>
                     <!-- filter dropdown -> it needs to be changed into popup -->
                     <div class="filter">
@@ -356,8 +376,8 @@
 
                 <div id="Deleted" class="tabcontent">
                     <!-- search bar -->
-                    <div class="search-bar">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                    <div class="box">
+                        <i class="fal fa-search"></i>
                         <input type="text" placeholder="Search approved templates here">
                     </div>
                     <!-- filter dropdown -> it needs to be changed into popup -->
@@ -371,6 +391,7 @@
                         </div>
                     </div>
                 </div>
+                <div></div>
             </div>
             <hr>
         </div>
