@@ -173,8 +173,10 @@
   text-align: center;
   color: #969696;
   margin-left: 50px;
-  margin-right: 64px;
+  margin-right: 4%;
   margin-top: 26px;
+  font-weight: 400;
+font-size: 17.271px;
 }
 
 hr {
@@ -188,6 +190,7 @@ hr {
   margin-top: 40px;
   width: 100%;
   height: 40px;
+  
 }
 
 /* search bar */
@@ -307,7 +310,7 @@ h2 > small {
   padding: 25px 30px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .responsive-table > .table-header {
