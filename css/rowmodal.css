@@ -1,0 +1,22 @@
+#table-dropbtn {
+    background-color: #cccccc;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 30px;
+    border: none;
+    padding: 8px;
+    height: 37px;
+    width: 106px;
+    float: right;
+  }
+  
+  .dropdown-content > li > a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown-content > li {
+    list-style: none;
+  }

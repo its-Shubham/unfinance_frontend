@@ -9,7 +9,7 @@
   padding: 8px;
   height: 37px;
   width: 106px;
-  float: right;
+  float: right; 
 }
 
 .dropdown-content > li > a {
