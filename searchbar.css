@@ -1,0 +1,22 @@
+/* search bar */
+.search-bar {
+  height: 40px;
+  width: 585px;
+  background-color: #e7e7e7;
+  border-radius: 22px;
+  display: flex;
+  float: left;
+}
+
+.search-bar > i {
+  color: white;
+  padding: 15px;
+}
+
+.search-bar > input {
+  background-color: #e7e7e7;
+  flex: 1;
+  border-radius: 22px;
+  border: none;
+  outline: none;
+}

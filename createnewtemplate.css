@@ -1,0 +1,32 @@
+.button_new_temp {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: center;
+  width: 40%;
+  height: 80%;
+  float: right;
+}
+
+.top-right {
+  width: 215px;
+  height: 41px;
+  /* background-color: rgb(255, 140, 0); */
+}
+
+.top-right button {
+  width: 215px;
+  height: 41px;
+  font-family: "Inter";
+  font-style: normal;
+  border-style: none;
+  border-radius: 30px;
+  color: white;
+  background-color: #969696;
+  /* margin-left:50%; */
+  margin: 35px;
+  margin-left: 67%;
+}
